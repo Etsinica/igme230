@@ -1,0 +1,105 @@
+/* loads the font */
+@font-face {
+    font-family: avenir;
+    src: url(Avenir.ttc);
+}
+
+/* for javascript formatting (without this there were white margins) */
+html, body{
+    height:100%;
+}
+
+/* more javascript formatting */
+body{
+    margin: 0;
+    display:flex;
+}
+
+/* doc wide border-box and font */
+* {
+    box-sizing: border-box;
+    font-family: avenir;
+}
+
+h1{
+    position: absolute;
+    text-align: center;
+    font-size: 5vmin;
+    right:40.7vw;
+    bottom: 2vh;
+    color: rgb(172.5, 100, 172.5);
+}
+h2{
+    position: absolute;
+    text-align: center;
+    font-size: 2vmin;
+    right:40.7vw;
+    bottom: 1vh;
+    color: rgb(172.5, 100, 172.5);
+}
+
+/* sets base font size */
+div {
+    margin: 0;
+    padding: 0;
+    font-size: 5vmin;
+
+}
+
+/* removes underline */
+a {
+    text-decoration: none;
+}
+
+/* bolds the text on hover */
+a:hover {
+    font-weight: bold
+}
+
+/* sets text color for exercise links */
+#exlink {
+    color: rgb(100, 100, 245);
+
+    margin-bottom: auto;
+}
+
+/* sets text color for project links */
+#prlink {
+    color: rgb(245, 100, 100);
+}
+
+/* removes bullet */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* adds spacing between list items */
+li{
+    margin: 1vh;
+}
+
+/* responsive size and text aligh */
+#exercises {
+    position: absolute;
+    top: 20vh;
+    bottom: 25vh;
+    left: .3em;
+    text-align: left;
+
+}
+
+/* responsive size and text aligh */
+#projects {
+    position: absolute;
+    top: 30vh;
+    bottom: 25vh;
+    right: .3em;
+    text-align: right;
+    color: green;
+    font-size: 7vmin;
+
+}
+
+/* I really hated relying on absolute positioning so frequently... the other positioning methods messed with the Javascript canvas*/
