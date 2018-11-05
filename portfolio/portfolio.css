@@ -15,7 +15,7 @@ body {
 
 body {
     margin: 0;
-    
+
 
 }
 
@@ -86,7 +86,7 @@ h6 {
     width: 100%;
 }
 
-.top{
+.top {
     display: block;
 
     margin-left: auto;
@@ -98,17 +98,33 @@ img {
     max-width: 75%;
     margin-left: 5%;
 }
-.icon, .iconAlt{
+
+.icon,
+.iconAlt {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -20%;      
+    margin-bottom: -20%;
 }
-.icon:hover{
+
+.icon:hover {
     content: url("icon2Color.png");
 }
 
-.banner{}
+.galleryFeature {
+    max-width: 100%;
+    margin: 20%;
+    max-height: 700px;
+
+}
+
+.galleryFeature2 {
+    max-height: 100%;
+    margin: 20%;
+    ;
+}
+
+.banner {}
 
 
 .title {}
@@ -116,12 +132,14 @@ img {
 .section {
     margin-left: 14%;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
 }
-.extra{
+
+.extra {
     margin-left: 40px;
 }
 
@@ -131,11 +149,13 @@ img {
     left: 0%;
     width: 100%;
 }
+
 #left-aside {
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
 }
+
 #right-aside {
-        writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
 }
 
 ul {
@@ -153,7 +173,7 @@ li {
     margin-top: 20%;
     color: #d1d8e5;
     text-align: left;
-    
+
 }
 
 p {
@@ -166,11 +186,13 @@ p {
 }
 
 /* removes underline */
+
 a {
     text-decoration: none;
 }
 
 /* bolds the text on hover */
+
 a:hover {
     font-weight: bold;
 }
@@ -178,5 +200,47 @@ a:hover {
 .video {
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
+@media only screen and (max-width: 1280px) {
+    iframe {
+        width: 896px;
+    }
+}
+
+@media only screen and (max-width: 896px) {
+    iframe {
+        width: 640px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    iframe {
+        width: 300px;
+    }
+    .aside {
+        display: none;
+    }
+    p {
+        font-size: 12px;
+    }
+    info {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .galleryFeature {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+       
+    }
+    .galleryFeature2 {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+       
+    }
+}

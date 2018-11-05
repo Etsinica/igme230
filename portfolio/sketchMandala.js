@@ -35,7 +35,7 @@ for (var i = 0; i < segNum; i++) {
 
 function setup() {
     imageMode(CENTER);
-    canvas = createCanvas(windowWidth, windowHeight * 2);
+    canvas = createCanvas(windowWidth, windowHeight * 2.2);
     canvas.position(0, 0)
     canvas.style('z-index', '-1');
 
