@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,900i" rel="stylesheet">
+
+
+    <title>Grid Example</title>
+
+    <style>
+        .mygrid {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 150px 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr 50px;
+        }
+
+        .mygrid div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            border: 3px dotted azure;
+        }
+
+        .titlebar {
+            grid-column-start: 1;
+            grid-column-end: -1;
+
+            /*            grid-column: 1 / 4;*/
+        }
+
+        .sidebar {
+            grid-row: 2 / -2;
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#fafaff">
+    <div class="mygrid">
+        <div class="titlebar">Cell1</div>
+        <div class="sidebar">Cell2</div>
+        <div>Cell3</div>
+        <div>Cell4</div>
+        <div>Cell5</div>
+        <div>Cell6</div>
+        <div class="footer">Cell7</div>
+
+
+
+    </div>
+</body>
+
+
+
+</html>

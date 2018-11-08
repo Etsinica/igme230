@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #panel1, #panel2 {
+            background-color: aliceblue;
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px
+        }
+        
+        #panel2{
+            background-color: aqua;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <button id="show">show</button> <button id="hide">hide</button>
+
+    <div id="panel1">
+        arbitrary text!
+    </div>
+    
+    <div id="panel2">
+        more useless text
+    </div>
+
+    <script>
+        $("#hide").click(function() {
+            $("#panel1").hide();
+        });
+
+        $("#show").click(function() {
+            $("#panel1").show();
+        });
+    </script>
+
+
+
+
+</body>
+    </html>
