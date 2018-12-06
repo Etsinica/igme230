@@ -34,5 +34,119 @@ aside {
 /**************
 Your Formatting
 ***************/
+body {
+    margin: auto;
+    display: grid;
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+
+    grid-template-rows: 75px 30px 1fr 2fr 50px;
+    grid-template-columns: 1fr 2fr;
+    
+
+}
 
 
+header {
+    grid-column: 1/2;
+}
+
+nav {
+    grid-column: 1/-1;
+}
+
+
+
+
+
+header, footer{
+    background-color: lightpink;
+}
+article{
+    background-color: lightcyan;
+}
+aside{
+    background-color: lightblue;
+}
+nav{
+    background-color: lavenderblush
+}
+header,
+footer,
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav{
+    justify-content: space-evenly;
+}
+
+.mainmenu{
+    width: 6rem;
+    background-color: #ccc;
+    justify-content: space-evenly;
+        
+}
+
+.submenu{
+        list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    display: none;
+    z-index: 2;
+    position: fixed;
+}
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+    body {
+        margin: auto;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-row: 1;
+        height: 75px;
+    }
+
+    nav {
+        grid-row: 2;
+        height: 30px;
+    }
+
+    article {
+        grid-row: 3;
+        height: auto;
+    }
+
+    aside {
+        grid-row: 4;
+        height: auto;
+    }
+
+    footer {
+        grid-row: 5;
+        height: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
