@@ -1,0 +1,6 @@
+Name:			Ethan Sinica
+Assignment Title: 	Project 3
+Description:		Solar system in the mouse in the palm of your hand. Certain elements to scale like the rotation and revolution speeds of the inner planets, other things approximated down to scale such as general planet size and orbit times of outer planets (200 earth days is a long revolution). Variables are scaled to earth = 1
+User Responsibiities:	Load the files in Chrome, observe the solar system, click radio buttons and look at the different angles, read perhaps, maybe get a bit mesmerized
+Known Issues: 		Everything works as far as I'm aware, no crashes. All text on the canvas ended up having to be loaded in as textures.
+Notes: 			3D with WEBGL was really fun although certain things just wouldn't work (pixels[] and get/set cause errors with WEBGL).

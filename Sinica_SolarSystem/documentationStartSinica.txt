@@ -1,0 +1,25 @@
+﻿Documentation draft
+Ethan Sinica
+Solar System
+
+<><>Beginning of project documentation<><>
+
+
+Content requirements:
+1. Mouse and p5 Dom: checkbox to stop/start animation, checkbox for planet titles, on-screen text largely through Dom and general html/css. IDEALLY sliders for size, input for color, button for randomizer.
+2. Typography: Labels over planets and sidebar options
+3. Image/video: Planet textures
+4. Visuals and Experience: Cute little planets. If mouse pressed gentle camera movements according to mouseX and mouseY, IDEALLY solar system is editable/randomizable (planet textures would be grayscale with tints/color layovers for sake of customization/randomization)
+
+
+Structural requirements:
+1. Global Variables: Image variable calls to a function within a class, newPlanet, most things will happen within the Planet and SolarSystem classes.
+2. Classes: Planet and SolarSystem
+3. Collection: Image loading function into a map
+4. Higher order function: planets go into the solar system
+5. Images: planet textures
+6. External text file: planet descriptions, IDEALLY if a planet is clicked links to new screen (hah yeah lets see if this is reasonable at all).
+7. External font: something geometric and what-not
+8. Dom controls: checkbox to stop/start animation, checkbox for planet titles, on-screen text largely through Dom and general html/css. IDEALLY sliders for size, input for color, button for randomizer.
+9. get() and set(): used to pick textures for the planets out of the map, IDEALLY can be user set and randomized
+10. File load fail callbacks: For font fail goes to sans serif default, Image fail goes to solid color
