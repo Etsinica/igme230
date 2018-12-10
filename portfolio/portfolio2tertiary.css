@@ -23,7 +23,6 @@ body {
     margin: 0;
 }
 
-
 .aside {
     display: flex;
     justify-content: center;
@@ -53,7 +52,7 @@ body {
     min-height: 100vh;
 
 
-    grid-template-rows: 100vh 100vh 100vh 100vh 100vh 1fr;
+    grid-template-rows: 250px 50vh 50vh;
     /* defines relative height of three rows */
     grid-template-columns: 7vw 2fr 7vw;
     /* defines width of the three columns */
@@ -76,7 +75,10 @@ header {
 
 .container {
     grid-column: 2/3;
+}
 
+.links {
+    grid-column: 2/3;
 }
 
 #first {
@@ -169,10 +171,10 @@ h2 {
 }
 
 h3 {
-    text-align: left;
-    font-size: 55px;
+    text-align: center;
+    font-size: 20px;
     font-style: oblique;
-    font-weight: bold;
+    font-weight: normal;
     color: #d1d8e5;
     margin: 0;
 }
@@ -219,8 +221,22 @@ h6 {
 a {
     text-decoration: none;
 }
+
 a:hover {
     font-weight: bold;
+/*
+    text-decoration: underline;
+        text-decoration-style: wavy;
+*/
+}
+
+.contact{
+    margin: 10vh;
+}
+
+ul{
+    margin-top: 200px;
+}
 
 @media only screen and (max-width: 1280px) {
     iframe {
