@@ -79,6 +79,8 @@ header {
 
 }
 
+
+/*first-fourth to align titles with image within the grid*/
 #first {
     grid-row: 2/3;
 }
@@ -96,6 +98,7 @@ header {
 }
 
 
+/*all "menu" items are for mobile drop-down... see javascript for more info*/
 .mainmenu {
     position: fixed;
     margin-left: 85vw;
@@ -103,7 +106,6 @@ header {
     display: none;
 
 }
-
 .submenu {
     list-style-type: none;
 
@@ -114,18 +116,12 @@ header {
     margin-left: 70vw;
     margin-top: 15vw;
 }
-
 .menutext {
     text-align: right;
     color: #7f8084;
     font-weight: 500;
 }
 
-
-nav {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
 
 footer {
     grid-column: 1/-1;
@@ -138,6 +134,8 @@ svg {
     height: 5vw;
 }
 
+
+/*centering*/
 header,
 footer,
 .container {
@@ -147,10 +145,13 @@ footer,
     flex-direction: column;
 }
 
+/*scales images to fit*/
 img {
     max-width: 100%;
 }
 
+
+/*main page title*/
 h1 {
     text-align: center;
     font-size: 40px;
@@ -160,6 +161,7 @@ h1 {
 
 }
 
+/*page desc*/
 h2 {
     margin: 0;
     text-align: center;
@@ -168,6 +170,7 @@ h2 {
     font-weight: normal;
 }
 
+/*section title*/
 h3 {
     text-align: left;
     font-size: 55px;
@@ -177,6 +180,7 @@ h3 {
     margin: 0;
 }
 
+/*section description*/
 h4 {
     text-align: left;
     text-transform: uppercase;
@@ -221,6 +225,7 @@ a {
 }
 a:hover {
     font-weight: bold;
+}
 
 @media only screen and (max-width: 1280px) {
     iframe {

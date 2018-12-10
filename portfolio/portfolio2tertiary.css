@@ -233,7 +233,9 @@ a:hover {
 .contact{
     margin: 10vh;
 }
-
+p{
+    color: #d1d8e5; 
+}
 ul{
     margin-top: 200px;
 }
