@@ -14,21 +14,44 @@
 let solarSystem;
 let doms;
 let A = 0;
+let songStart;
+let songSun;
+let songMercury;
+let songVenus;
+let songEarth;
+let songMars;
+let songJupiter;
+let songSaturn;
+let songUranus;
+let songNeptune;
+
 
 function preload() {
     let bg;
     //links to the SolarSystem class for Images 
     solarSystem = new SolarSystem();
 
-    
-    
+
+    //loads music
+    songStart = loadSound('media/audio/00mainStart.wav');
+    songSun = loadSound('media/audio/0xSun.wav');
+    songMercury = loadSound('media/audio/1mercury.wav');
+    songVenus = loadSound('media/audio/2venus.wav');
+    songEarth = loadSound('media/audio/3earth.wav');
+    songMars = loadSound('media/audio/4mars.wav');
+    songJupiter = loadSound('media/audio/5jupiter.wav');
+    songSaturn = loadSound('media/audio/6saturn.wav');
+    songUranus = loadSound('media/audio/7uranus.wav');
+    songNeptune = loadSound('media/audio/8neptune.wav');
+
+
     //looping stars video
     bg = createVideo("media/backgroundLoop.mp4");
     bg.loop();
     bg.hide();
 
     //loading of font
-    
+
     loadFont('media/fonts/micross.ttf');
 }
 
@@ -42,6 +65,36 @@ function setup() {
     doms = new Doms();
     doms.makeDoms();
 
+
+    songStart.loop();
+    songStart.setVolume(0);
+
+    songSun.loop();
+    songSun.setVolume(0);
+
+    songMercury.loop();
+    songMercury.setVolume(0);
+
+    songVenus.loop();
+    songVenus.setVolume(0);
+
+    songEarth.loop();
+    songEarth.setVolume(0);
+
+    songMars.loop();
+    songMars.setVolume(0);
+
+    songJupiter.loop();
+    songJupiter.setVolume(0);
+
+    songSaturn.loop();
+    songSaturn.setVolume(0);
+
+    songUranus.loop();
+    songUranus.setVolume(0);
+
+    songNeptune.loop();
+    songNeptune.setVolume(0);
 
 
 
@@ -64,21 +117,35 @@ function draw() {
     switch (doms.cameraRadio.value()) {
         case "1":
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
+            resetVolume();
+            songStart.setVolume(1);
             break;
         case "2":
             camera(0, 4000, -800, 0, 0, 0, 0, 1, 0);
             translate(-camX, camY2);
+            resetVolume();
+            songStart.setVolume(1);
             break;
         case "3":
+            resetVolume();
+            songStart.setVolume(1);
             camera(0 + camX, 4000 + camY, -1000, 0, 0, 0, 0, 1, 0);
             break;
         case "4":
+            //set volume for according song
+            resetVolume();
+            songStart.setVolume(1);
+            
             camera(0, 4000 + camY, -1000, 0, 0, 0, 0, 1, 0);
             translate(-camX, 0, camY / 5);
             break;
 
             //last resort paragraphing... Tried to get it in there using DOM but the dom paragraph and element fields didn't like the external variables (the resulting text field would always be a string of code)
         case "5":
+                        //set volume for according song
+            resetVolume();
+            songSun.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -90,8 +157,16 @@ function draw() {
             texture(solarSystem.sunText);
             plane(400, 1000);
             pop();
+
+            resetVolume();
+            songSun.setVolume(1);
+
             break;
         case "6":
+                        //set volume for according song
+            resetVolume();
+            songMercury.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -105,6 +180,10 @@ function draw() {
             pop();
             break;
         case "7":
+                        //set volume for according song
+            resetVolume();
+            songVenus.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -118,6 +197,10 @@ function draw() {
             pop();
             break;
         case "8":
+                        //set volume for according song
+            resetVolume();
+            songEarth.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -131,6 +214,10 @@ function draw() {
             pop();
             break;
         case "9":
+                        //set volume for according song
+            resetVolume();
+            songMars.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -144,6 +231,10 @@ function draw() {
             pop();
             break;
         case "10":
+                        //set volume for according song
+            resetVolume();
+            songJupiter.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -157,6 +248,10 @@ function draw() {
             pop();
             break;
         case "11":
+                        //set volume for according song
+            resetVolume();
+            songSaturn.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -170,6 +265,10 @@ function draw() {
             pop();
             break;
         case "12":
+                        //set volume for according song
+            resetVolume();
+            songUranus.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -183,6 +282,10 @@ function draw() {
             pop();
             break;
         case "13":
+                        //set volume for according song
+            resetVolume();
+            songNeptune.setVolume(1);
+            
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             rotateX(radians(90));
@@ -244,7 +347,7 @@ function draw() {
     var neptune = new Planet(solarSystem.neptuneName, 45, solarSystem.neptuneTex, 0, 0, 0, 80, 120, 2300, 12 / 100, 28, 1);
     neptune.display();
 
-    if(mouseIsPressed){
+    if (mouseIsPressed) {
         var c = get(mouseX, mouseY);
         //fill(c);
         torus(20, 3);
@@ -252,9 +355,57 @@ function draw() {
         console.log("PRESSED!");
     }
 }
+
 function setMyFont(theFont) {
     textFont(theFont);
 }
+
+
+function resetVolume(){
+
+    songStart.setVolume(0);
+
+
+    songSun.setVolume(0);
+
+
+    songMercury.setVolume(0);
+
+
+    songVenus.setVolume(0);
+
+
+    songEarth.setVolume(0);
+
+
+    songMars.setVolume(0);
+
+
+    songJupiter.setVolume(0);
+
+
+    songSaturn.setVolume(0);
+
+
+    songUranus.setVolume(0);
+
+
+    songNeptune.setVolume(0);
+}
+
+function mousePressed() {
+    getAudioContext().resume()
+}
+
+//function mousePressed() {
+//  if (song.isPlaying()) {
+//    // .isPlaying() returns a boolean
+//    song.pause(); // .play() will resume from .pause() position
+//  } else {
+//    song.play();
+//  }
+//}
+
 //function mousePressed() {
 //    //var c = get(mouseX, mouseY);
 //    fill(200);
