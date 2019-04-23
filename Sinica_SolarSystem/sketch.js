@@ -118,23 +118,23 @@ function draw() {
         case "1":
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
             resetVolume();
-            songStart.setVolume(1);
+            songStart.setVolume(.75);
             break;
         case "2":
             camera(0, 4000, -800, 0, 0, 0, 0, 1, 0);
             translate(-camX, camY2);
             resetVolume();
-            songStart.setVolume(1);
+            songStart.setVolume(.75);
             break;
         case "3":
             resetVolume();
-            songStart.setVolume(1);
+            songStart.setVolume(.75);
             camera(0 + camX, 4000 + camY, -1000, 0, 0, 0, 0, 1, 0);
             break;
         case "4":
             //set volume for according song
             resetVolume();
-            songStart.setVolume(1);
+            songStart.setVolume(.75);
             
             camera(0, 4000 + camY, -1000, 0, 0, 0, 0, 1, 0);
             translate(-camX, 0, camY / 5);
@@ -144,7 +144,7 @@ function draw() {
         case "5":
                         //set volume for according song
             resetVolume();
-            songSun.setVolume(1);
+            songSun.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -158,14 +158,11 @@ function draw() {
             plane(400, 1000);
             pop();
 
-            resetVolume();
-            songSun.setVolume(1);
-
             break;
         case "6":
                         //set volume for according song
             resetVolume();
-            songMercury.setVolume(1);
+            songMercury.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -182,7 +179,7 @@ function draw() {
         case "7":
                         //set volume for according song
             resetVolume();
-            songVenus.setVolume(1);
+            songVenus.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -199,7 +196,7 @@ function draw() {
         case "8":
                         //set volume for according song
             resetVolume();
-            songEarth.setVolume(1);
+            songEarth.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -216,7 +213,7 @@ function draw() {
         case "9":
                         //set volume for according song
             resetVolume();
-            songMars.setVolume(1);
+            songMars.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -233,7 +230,7 @@ function draw() {
         case "10":
                         //set volume for according song
             resetVolume();
-            songJupiter.setVolume(1);
+            songJupiter.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -250,7 +247,7 @@ function draw() {
         case "11":
                         //set volume for according song
             resetVolume();
-            songSaturn.setVolume(1);
+            songSaturn.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -267,7 +264,7 @@ function draw() {
         case "12":
                         //set volume for according song
             resetVolume();
-            songUranus.setVolume(1);
+            songUranus.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
@@ -284,7 +281,7 @@ function draw() {
         case "13":
                         //set volume for according song
             resetVolume();
-            songNeptune.setVolume(1);
+            songNeptune.setVolume(.75);
             
             //camera reset, angle change
             camera(0, 4000, -1000, 0, 0, 0, 0, 1, 0);
